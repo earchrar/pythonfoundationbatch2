@@ -1,0 +1,238 @@
+=> Environment 
+    (i). Text Editor
+    (ii). Intergrated Development Envrionment ( IDE )
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+=> Who Use Python 
+    1. Software Developers 
+        Backend development, web applications ( eg. Django , Flask )
+    2. Data Scientists and Analysis 
+        Data analysis , data visualization and statistical modeling 
+    3. AI ( Artificial Intelligence ) and ML ( Machine Learning )
+        TensforFlow,Pytorch,Keras 
+    4. Enginners 
+        automation,simulations , ( eg Raspberry Pi )
+    5. Cybersecurity / Networking 
+        creating custome security tools 
+    6. Game Developers
+        Pygame
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+=> What is Programming 
+    1. Creating Algorithms 
+        sorting to number and datas 
+    2. Writing Code 
+        Programmer have to code ( Python,Java,C++,etc...)
+    3. Compiling (.exe) and Interpreting (.exe မပါတယ်)  
+        Compiler : All Code in one time 
+        Interpreter : Code in one line 
+    4. Problem-Solving 
+    5. Debugging ( ပြစ်ချက် err)
+        bug file 
+    6. Testing 
+        Test Program 
+    7. Creating Software Applications 
+        Create Software ( Web App , Mobile App , Desktop App )
+    8. Automation 
+        Repetitive Process 
+    9. Building User Interface (UI) 
+    10. Maintaing and Optimizing  
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+=> What is Programmer 
+    1. Writing Code 
+    2. Creating Software Applications 
+        Web Development 
+        Mobile Development 
+        Game Development 
+        Cybersecurity 
+    3. Problem Solving 
+    4. Testing and Debugging 
+    5. Optimizing Code ( အစီစဉ်တကျ ရေးရမယ် )
+    6. Collaboration ( Team Work ) 
+        Devlopers, Desinger , Project Manager 
+    7. Maintaing Software 
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+=> What is Programming Language 
+    1. Syntax 
+    2. Instruction 
+    3. Data Types 
+    4. Compiler and Interpreter 
+        Compiler Language : ( C,C++,Go(Goland).etc)
+        Interpreter Language : Python 
+    5. Variables and Functions 
+    6. Hight Level or Low Level Programming 
+        Hight-Level Language (Python,Java,etc..) => လူတွေ. နားလည်နိုင်တယ် စကားလုံး ရေးသားထားတယ် အရာကို  Hight Level Programming
+        Low-Level Language ( Assembly,Maching Code) => လူတွေ. နားမလည်နိုင်ဘဲ. စက်တွေ. နားလည်နိုင်တယ် code တွေ.ကို Low Level Programming 
+    
+    Hight-Level Language 
+    Assembly Code 
+    Machine Language 
+    Hardware 
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+= Why HTML is not programming language ? 
+    Hypertext Markup Language 
+        No Logic, Data Manipulation , Computation 
+    1. No Logic and Control Straction 
+    2. Description 
+    3. Variables and Functions 
+    4. Static Content 
+    5. either Compiler nor Interpreter
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+= Why CSS is not programming language ? 
+    Cascading Style Sheets 
+        either Copiler nor Interpreter 
+        SSL ( Style Sheet Language ) or SPL ( Style Presentation Language )
+        Not Logic-based Language so can't computation 
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+= Javascript 
+    Interpreter 
+        Browser 
+    JIT (Just-in-Time) Compilation 
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+=> Markup Language vs Programming Language 
+    Markup = Description 
+    Programming = Order 
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+=> Compiler vs Interpreter 
+
+    => ( Compiler = Source code to Machine Code )
+        = 1. program.go 
+
+            import "fmt" 
+
+            func myfun(){
+                fmt.PrintIn("Hello Aung Aung");
+            }
+
+        = 2. Compiling 
+            go build -o program program.go 
+        
+        = 3. Linking 
+            Go Runtime , Libraties, Dependency Files, Binary File 
+
+        = 4. Execution( Machine Code )
+
+    => Interpreter 
+        Python source code -> byte code (.pyc format) -> Interpreterd line by line ( Python Virtual Machine (PVM) )
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+=> How Python Code Work ? 
+    Interpreterd Language 
+    compilation and interpretation , are both included 
+    
+    1. Python source code (.py) 
+        print("Hello Aung Aung") 
+    2. Interpretation 
+    3. byte code (.pyc format) 
+        Bytecode is Platform-indepedent 
+        PVM -> CPU -> run
+    4. Just-in-Time (JIT) Compilation 
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+=> Advantage of Python Programming Language 
+
+    1. Easy Syntax
+        print("Hello World") 
+    2. Interpreted Language 
+    3. Hight-Level Language 
+    4. Dynamic Type Language 
+        eg. Statically Type Language ( C C++ C# Java Go Swift )
+
+        eg. ( java example code )
+
+        public class Main{
+            public static void main(String[] args){
+                int x = 100; // Static type : int 
+                double y = 9.99;// Static type : double 
+                String name = "Aung Aung"; // Static type : String 
+
+                System.out.println("x value is " + x);
+                System.out.println("y value is " + y);
+            }
+        }
+
+        eg. ( python example code )
+
+        x = 10 # integer 
+        name = "Maung Maung" # string 
+
+        print("x value is " + x);
+        print("name value is " + name);
+
+    5. General Purpose Language 
+        Web Development , Data Analysis , Machine Learning , Artificial Intelligence , Game Devlopment , Mobile Applications 
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+=> Ubuntu install Python
+
+    sudo apt update 
+    sudo apt upgrade -y 
+
+    sudo apt install   
+
+    => Install on Ubuntu 
+        ls 
+        tar -xvf Python-3.12.6 tar.xy
+        ls 
+        cd Python-3.12
+        ls 
+        ./configure 
+        make 
+        sudo make install 
+
+    => Check Version 
+        python3 --version
+
+        python3.12 --version
+
+        python3
+        ctl+d (or) exit()
+
+        l1sample.py
+        python3  l1sample.py 
+        python  l1sample.py
+        py      l1sample.py
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+=> Comment ( inline comment )
+    # (or) ctr+/
+
+    # print("Hello World")
+
+    """
+        print("Hello sir")
+        print("Hello sir")
+        print("Hello sir")
+    """
+
+    '''
+        print("Hello sir")
+        print("Hello sir")
+        print("Hello sir")
+    '''
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
