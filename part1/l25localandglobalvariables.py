@@ -77,3 +77,8 @@ def funfour():
 
 funfour()
 
+
+# LocalandGlobalvariables
+    # (i). global 
+    # (ii). nonlocal 
+

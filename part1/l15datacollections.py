@@ -179,3 +179,15 @@ qone.put(300)
 print(qone.get()) # 400 get afer remove data
 print(qone.get()) # 100
 print(qone.get()) # 300
+
+# Data Collections 
+    # Counter 
+    # Queus or deque ( appendleft() | popleft() )
+    # defaultdict 
+    # OrderedDict ( move_to_end() )
+    # namedtuple
+    # ChainMap
+    # array 
+    # queue or Queue ( put() | get() )
+    # datetime
+    # functools | reduce

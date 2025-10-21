@@ -56,3 +56,16 @@ try:
 except ValueError as err:
     print(f"Error : {err}")
 
+
+# Exception Handling
+    # General Exception
+    # Specific Exception
+    # Raising Exception
+    # else and finally
+
+    # (i).ValueError
+    # (ii).ZeroDivisionError
+    # (i). FileNotFoundError 
+    # (ii). PermissionError 
+    # (iii). IOError or Exception General Case
+
