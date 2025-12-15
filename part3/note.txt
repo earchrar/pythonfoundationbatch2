@@ -1,0 +1,99 @@
+=> How to install Python in Ubuntu 
+
+sudo apt update 
+sudo apt upgrade 
+
+=> Install open SSL 
+# Ubuntu 
+    sudo apt install libssl-dev openssl
+# Max Os 
+    brew install openssl 
+
+=> Python Install 
+
+    wget https://
+    tar -xf Python-3.13.9.tar.xz 
+    cd Python-3.13.9
+
+        ./configure 
+
+        # Complete and Install 
+        make -j$(nproc) 
+        sudo make altinstall 
+
+        sudo ldconfig       // Optional - refresh shared library cache 
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+=> Install pip3 ( pip 24.0 )
+
+# Ubuntu 
+    sudo apt install python3-pip -y 
+
+    pip3 --version      or python3 -m pip --version
+    
+    pip3 list       or pip list 
+
+# Window 
+    python3 -m pip --version
+
+# Max Os 
+    brew update 
+    brew upgrade 
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+=> Install Virtual Environment 
+
+    # Ubuntu 
+        sudo apt install python3-venv
+
+    # Window 
+        python3 -m venv ven 
+
+=> Create Virtual Environment 
+
+    # Linux / maxOs 
+        python3 -m venu             # you can use anyname whatever you want "myenv"
+
+    # Window 
+        python -m venv myenv
+        myenv\Scripts\activate
+        (myenv) C:\Users\YourName\myproject>
+
+    => for activate 
+        #Linux/macOs 
+        source myenv/bin/activate       // activate 
+
+        # Window 
+        .\myenv\Scripts\activate        // activate 
+
+        pip3 list
+
+        deactivate                     // deactivate 
+
+        pip3 list 
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+=> ( Upgrade Python version ) Linux User 
+
+    (i) Remove Python Installation folders 
+        sudo rm -rf /usr/local/lib/python3.13.9
+        sudo rm -rf /usr/local/bin/python3.13*
+
+    (ii). Python Install 
+
+        wget https://
+        tar -xf Python-3.13.9.tar.xz 
+        cd Python-3.13.9
+
+            ./configure 
+
+            # Complete and Install 
+            make -j$(nproc) 
+            sudo make altinstall 
+
+            sudo ldconfig       // Optional - refresh shared library cache
+
+-----------------------------------------------------------------------------------------------------------------------------------

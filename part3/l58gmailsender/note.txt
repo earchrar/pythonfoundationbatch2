@@ -1,0 +1,11 @@
+=> Gmail Config 
+
+    1. Gmail Login 
+    // 2. Gmail > Setting icon > See all settings > Forwarding and POP/IMAP > IMAP access: on
+    2. Gmail > Manage your Google Account > Security and Sign in > 2-step Verification > "need to turn on"
+    3. Create App passwords 
+        (i). Gmail > Manage your Google Account > Security
+        (i). go to "Search Google Account" > type "app" > App passwords
+            App name : any name > create
+
+-----------------------------------------------------------------------

@@ -1,0 +1,107 @@
+=> How to install Python in Ubuntu 
+
+sudo apt update 
+sudo apt upgrade 
+
+=> Install open SSL 
+# Ubuntu 
+    sudo apt install libssl-dev openssl
+# Max Os 
+    brew install openssl 
+
+=> Python Install 
+
+    wget https://
+    tar -xf Python-3.13.9.tar.xz 
+    cd Python-3.13.9
+
+        ./configure 
+
+        # Complete and Install 
+        make -j$(nproc) 
+        sudo make altinstall 
+
+        sudo ldconfig       // Optional - refresh shared library cache 
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+=> Install pip3 ( pip 24.0 )
+
+# Ubuntu 
+    sudo apt install python3-pip -y 
+
+    pip3 --version      or python3 -m pip --version
+    
+    pip3 list       or pip list 
+
+# Window 
+    python3 -m pip --version
+
+# Max Os 
+    brew update 
+    brew upgrade 
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+=> Install Virtual Environment 
+
+    # Ubuntu 
+        sudo apt install python3-venv
+
+    # Window 
+        python3 -m venv ven 
+
+=> Create Virtual Environment 
+
+    # Linux / maxOs 
+        python3 -m venu             # you can use anyname whatever you want "myenv"
+
+    # Window 
+        python -m venv myenv
+        myenv\Scripts\activate
+        (myenv) C:\Users\YourName\myproject>
+
+    => for activate 
+        #Linux/macOs 
+        source myenv/bin/activate       // activate 
+
+        # Window 
+        .\myenv\Scripts\activate        // activate 
+
+        pip3 list
+
+        deactivate                     // deactivate 
+
+        pip3 list 
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+=> mysql module ( 9.5.0 )
+
+    https://pypi.org/project/mysql-connector-python/
+
+    pip install mysql-connector-python
+
+    pip3 list
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+=> python dotenv  ( 1.2.1 )
+
+    (i) Install
+        https://pypi.org/project/python-dotenv/
+
+        pip install python-dotenv
+
+        pip3 list 
+
+    (ii) Create 
+        create .env file 
+
+    (iii) Import 
+        from dotenv import load_dotenv
+        import os
+
+        load_dotenv()
+
+-----------------------------------------------------------------------------------------------------------------------------------

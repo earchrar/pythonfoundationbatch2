@@ -1,0 +1,171 @@
+=> How to install Python in Ubuntu 
+
+sudo apt update 
+sudo apt upgrade 
+
+=> Install open SSL 
+# Ubuntu 
+    sudo apt install libssl-dev openssl
+# Max Os 
+    brew install openssl 
+
+=> Python Install 
+
+    wget https://
+    tar -xf Python-3.13.9.tar.xz 
+    cd Python-3.13.9
+
+        ./configure 
+
+        # Complete and Install 
+        make -j$(nproc) 
+        sudo make altinstall 
+
+        sudo ldconfig       // Optional - refresh shared library cache 
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+=> Install pip3 ( pip 24.0 )
+
+# Ubuntu 
+    sudo apt install python3-pip -y 
+
+    pip3 --version      or python3 -m pip --version
+    
+    pip3 list       or pip list 
+
+# Window 
+    python3 -m pip --version
+
+# Max Os 
+    brew update 
+    brew upgrade 
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+=> Install Virtual Environment 
+
+    # Ubuntu 
+        sudo apt install python3-venv
+
+    # Window 
+        python3 -m venv ven 
+
+=> Create Virtual Environment 
+
+    # Linux / maxOs 
+        python3 -m venu             # you can use anyname whatever you want "myenv"
+
+    # Window 
+        python -m venv myenv
+        myenv\Scripts\activate
+        (myenv) C:\Users\YourName\myproject>
+
+    => for activate 
+        #Linux/macOs 
+        source myenv/bin/activate       // activate 
+
+        # Window 
+        .\myenv\Scripts\activate        // activate 
+
+        pip3 list
+
+        deactivate                     // deactivate 
+
+        pip3 list 
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+=> python dotenv  ( 1.2.1 )
+
+    (i) Install
+        https://pypi.org/project/python-dotenv/
+
+        pip install python-dotenv
+
+        pip3 list 
+
+    (ii) Create 
+        create .env file 
+
+    (iii) Import 
+        from dotenv import load_dotenv
+        import os
+
+        load_dotenv()
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+https://firebase.google.com/
+
+Click to Go to console -> Get Started -> Created a new Firebase project 
+Project Name = Python B1 Project 
+Click Continue 
+
+Enable Gemini in Firebase = unchecked 
+Click Contiue 
+
+Enable Google Analytics for this project = Uncheck 
+Click Create Project > Continue > Continue 
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+=> Get Firebase SDK code ( Software Development Kit )
+
+    Click "Left side Bar" "Project Overview" > Project Setting > you can see you app codes
+
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyAVTN60uc_oXik_cuGG0SfO2EIOWIoCClc",
+        authDomain: "my-first-project-32aab.firebaseapp.com",
+        projectId: "my-first-project-32aab",
+        storageBucket: "my-first-project-32aab.firebasestorage.app",
+        messagingSenderId: "230908692179",
+        appId: "1:230908692179:web:8fb7a13a7d62953024b626",
+        measurementId: "G-9FTKRB77S3"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    </script>
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+    => Create Database 
+        Build > Firebase Database > Create Database 
+        (i). Select edition > Standard edition > click "Next"
+        (ii). Database ID & location 
+            Database ID = (default) 
+            Location = asia-southeast1 (Singapore) > click "Next"
+        (iii). Configure > Start in production mode > click "create"
+
+    => Error for writing (PERMISSION_DENIED) 
+        Build > Firebase Database > Rules > allow read , write if true; > click "Publish"
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+=> Firebase module (v ) 
+
+    https://firebase.google.com/docs/firestore/quickstart#python_3
+    http://pypi.org/project/firebase-admin/
+
+    pip install firebase-admin
+
+    pip3 list
+
+    (i) how to get Firebase Service Account as json file 
+
+        Go to Firebase console -> Open your Firebase Project -> Project Overview -> Project Setting -> Service Accounts -> choose Python > click Generate new private key > click "generate key" after download "serviceAccountKey".json
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
